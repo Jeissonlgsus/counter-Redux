@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap');
+.countainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-gradient);
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 50vh;
+    height: 80vh;
+}
+.title{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 20px;
+}
+.counter{
+    font-family: 'Raleway', sans-serif;
+}
+.count{
+    font-size: 50px;
+    font-family: 'Lobster', cursive;
+}
+.button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+    margin-top: 20px;
+}

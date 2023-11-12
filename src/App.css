@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Raleway&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --bg-color: #fafafa;
+    --bg-gradient: linear-gradient(
+      105deg,
+      rgba(0, 255, 191, 0.8) 0%,
+      rgba(216, 37, 240, 0.8) 100%
+    );
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/background/image.jpg);
+    background-size: cover;
+    background-position: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    font-family: 'Raleway', sans-serif;
   }
-}
+  
+  .app {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  .app main {
+    padding: 10px;
+    height: 100%;
+    overflow: auto;
+  }
+  
